@@ -62,7 +62,7 @@ src/
 - [ ] Navegación con teclado (focus visible siempre).
 - [ ] `prefers-reduced-motion`: sin animaciones críticas.
 - [ ] Validación HTML (W3C Validator) sin errores.
-- [ ] Pruebas rápidas con Lighthouse y Axe.
+- [ ] Pruebas rápidas con Lighthouse.
 
 ## 🔧 Personalización
 - Tipografías y paleta: edita las variables en `base.css` (`:root` y overrides dark).
