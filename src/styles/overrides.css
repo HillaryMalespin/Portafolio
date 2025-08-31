@@ -1,0 +1,15 @@
+/* Accesibilidad */
+:focus-visible { outline: 3px solid #60a5fa; outline-offset: 2px; }
+
+/* Respeto a preferencias del usuario */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Alto contraste forzado */
+@media (forced-colors: active){
+  .card, .course { border: 1px solid CanvasText; }
+}
+
+/* Detalles */
+a:focus-visible { outline-offset: 3px; }
