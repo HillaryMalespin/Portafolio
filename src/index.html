@@ -10,6 +10,23 @@
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/components.css">
   <link rel="stylesheet" href="styles/overrides.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hillary Malespín",
+      "url": "https://tusitio.com",
+      "image": "https://tusitio.com/src/img/me.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/hillarymalespin",
+        "https://github.com/hillarymalespin"
+      ],
+      "jobTitle": "Estudiante de Ingeniería en Computación",
+      "description": "Soy estudiante del TEC con interés en desarrollo web, accesibilidad y soluciones innovadoras."
+    }
+  </script>
+
 </head>
 <body>
   <!-- Encabezado principal -->
@@ -17,7 +34,7 @@
     <h1 id="profile-name">Portafolio</h1>
   </header>
 
-  <!-- Navegación (opcional para más adelante) -->
+  <!-- Navegación -->
   <nav role="navigation" aria-label="Menú principal">
     <ul>
       <li><a href="#introduccion">Sobre mí</a></li>
@@ -36,7 +53,21 @@
       <p id="profile-intro"></p>
     </section>
 
-    <!-- Aquí después pondremos más secciones: proyectos, skills, etc. -->
+    <!--secciones: proyectos, skills, etc. -->
+
+    <!-- Sección de cursos -->
+    <section id="courses" class="section">
+        <h2>Trabajos Académicos</h2>
+        <div id="courses-container"></div>
+    </section>
+
+    <section id="about-me" class="about-section">
+      <h2>About Me</h2>
+      <div id="about-content"></div>
+    </section>
+
+
+
   </main>
 
   <!-- Pie de página -->

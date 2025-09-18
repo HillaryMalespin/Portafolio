@@ -1,0 +1,41 @@
+{
+  "name": "Hillary Malespín",
+  "photo": "img/yo2.jpg",
+  "description": "Soy estudiante de Ingeniería en Computación en el TEC. Me apasiona el desarrollo de software, la investigación y la creación de soluciones prácticas. Mi objetivo profesional es especializarme en desarrollo web y contribuir a proyectos innovadores con impacto social.",
+
+  "skills": [
+    {
+      "category": "Lenguajes de Programación",
+      "items": ["Java – Avanzado", "C – Intermedio", "Python – Avanzado", "JavaScript – Intermedio"]
+    },
+    {
+      "category": "Frameworks y Librerías",
+      "items": ["React – Intermedio", "Vue.js – Intermedio", ".NET – Básico"]
+    },
+    {
+      "category": "Bases de Datos",
+      "items": ["SQL Server – Intermedio", "MySQL – Intermedio"]
+    },
+    {
+      "category": "Herramientas",
+      "items": ["Git/GitHub – Avanzado", "Visual Studio Code – Avanzado", "Azure – Básico"]
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Certificación en ",
+      "institution": "Algun lugar",
+      "year": "2024"
+    },
+    {
+      "name": "Curso de Introducción a algo",
+      "institution": "algun lugar",
+      "year": "2023"
+    }
+  ],
+
+  "linkedin": "https://www.linkedin.com/in/hillarymalespin/",
+  "github": "https://github.com/hillarymalespin",
+  "email": "malespinulloa03@gmail.com"
+}
