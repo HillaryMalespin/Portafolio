@@ -1,0 +1,20 @@
+{
+  "name": "Tu Nombre Completo",
+  "bio": "Soy estudiante de Ingeniería en Computación en el TEC. Me apasiona el desarrollo de software y la creación de soluciones prácticas.",
+  "intro": "Este portafolio recopila mis trabajos académicos y proyectos de la carrera en Ingeniería.",
+  "skills": [
+    "C",
+    "Java",
+    "SQL Server",
+    "Prolog",
+    "Haskell",
+    "Angular",
+    "React",
+    "ASP.NET",
+    ".NET MAUI"
+  ],
+  "linkedin": "https://www.linkedin.com/in/hillarymalespin/",
+  "github": "https://github.com/hillarymalespin",
+  "email": "hillarymalespin@estudiantec.cr",
+  "photo": "img/me.png"
+}

@@ -1,102 +1,50 @@
-<!doctype html>
-<html lang="es-CR" dir="ltr">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portafolio — Hillary Malespín Ulloa</title>
-  <meta name="description" content="Portafolio académico y profesional de Hillary Malespín Ulloa." />
-  <link rel="canonical" href="hillarymalespinportafolio.netlify.app" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Hillary Malespín</title>
 
-  <!-- CSS en orden de cascada -->
-  <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/layout.css">
-  <link rel="stylesheet" href="./styles/components.css">
-  <link rel="stylesheet" href="./styles/overrides.css">
-  <link rel="stylesheet" href="./styles/print.css" media="print">
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/overrides.css">
 </head>
 <body>
-  <!-- Anclas invisibles para conmutar tema -->
-  <a id="theme-light" class="visually-hidden" aria-hidden="true"></a>
-  <a id="theme-dark"  class="visually-hidden" aria-hidden="true"></a>
-
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-  <header class="site-header" role="banner">
-    <div class="container">
-      <h1>Hillary Malespín Ulloa</h1>
-      <nav aria-label="Principal">
-        <ul class="nav">
-          <li><a href="#home" aria-current="page">Inicio</a></li>
-          <li><a href="#courses">Cursos</a></li>
-          <li><a href="#profile">Perfil</a></li>
-        </ul>
-
-        <!-- Conmutador de tema -->
-        <div class="theme-switch no-print" role="group" aria-label="Tema de color">
-          <a class="btn-ghost" href="#theme-light" aria-label="Cambiar a tema claro" title="Tema claro">☀️</a>
-          <a class="btn-ghost" href="#theme-dark"  aria-label="Cambiar a tema oscuro" title="Tema oscuro">🌙</a>
-        </div>
-      </nav>
-    </div>
+  <!-- Encabezado principal -->
+  <header role="banner">
+    <h1 id="profile-name">Portafolio</h1>
   </header>
 
-  <main id="contenido" class="container" tabindex="-1" role="main">
-    <section id="home" class="card" aria-labelledby="home-title">
-      <h2 id="home-title">¡Hola! 👋</h2>
-      <p class="prose">
-        Bienvenid@s a mi portafolio. Aquí encontrarás una selección de trabajos por curso y mi perfil profesional.
-      </p>
+  <!-- Navegación (opcional para más adelante) -->
+  <nav role="navigation" aria-label="Menú principal">
+    <ul>
+      <li><a href="#introduccion">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main id="main-content">
+    <!-- Introducción cargada desde profile.json -->
+    <section id="introduccion" aria-labelledby="intro-title">
+      <img id="profile-photo" alt="Foto de perfil de Hillary Malespín">
+      <h2 id="intro-title">Sobre mí</h2>
+      <p id="profile-bio"></p>
+      <p id="profile-intro"></p>
     </section>
 
-    <section id="courses" class="card" aria-labelledby="courses-title">
-      <h2 id="courses-title">Trabajos por curso</h2>
-      <article class="course" aria-labelledby="c-ic8057">
-        <h3 id="c-ic8057">IC8057 — Introducción al Desarrollo de Páginas Web <small>(II-2025)</small></h3>
-        <ul>
-          <li>
-            <strong>Laboratorio #</strong> — Algo que hacer ·
-            <time datetime="2025-09-10">2025-09-10</time>
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="profile" class="card" aria-labelledby="profile-title">
-      <h2 id="profile-title">Perfil</h2>
-      <div class="profile">
-        <img
-          src="./img/me.png"
-          alt="Foto de Hillary Malespín Ulloa"
-          width="100" height="100"
-          loading="lazy" decoding="async" />
-        <div>
-          <h3>Hillary Malespín Ulloa</h3>
-          <p class="small">Estudiante del TEC. Interesada en desarrollo web, .NET y datos.</p>
-          <div class="links">
-            <a href="https://www.linkedin.com/in/hillarymalespinulloa" target="_blank" rel="noopener noreferrer">
-              LinkedIn <span class="visually-hidden">(se abre en una pestaña nueva)</span>
-            </a>
-            <a href="https://github.com/hillarymalespin" target="_blank" rel="noopener noreferrer">
-              GitHub <span class="visually-hidden">(se abre en una pestaña nueva)</span>
-            </a>
-          </div>
-
-          <p class="no-print" style="margin-top: 1rem;">
-            <a class="btn" href="#" role="button" aria-disabled="true" title="Disponible pronto">
-              Descargar PDF
-            </a>
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- Aquí después pondremos más secciones: proyectos, skills, etc. -->
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container small">
-      <p>© <span id="year">2025</span> Hillary Malespín Ulloa · <a href="#home">Inicio</a></p>
-    </div>
+  <!-- Pie de página -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Hillary Malespín</p>
   </footer>
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>

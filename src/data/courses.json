@@ -1,0 +1,37 @@
+[
+  {
+    "code": "IC8057",
+    "name": "Introducción al Desarrollo de Páginas Web",
+    "semester": "II-2025",
+    "techDesc": "HTML, CSS, JS, accesibilidad y despliegue.",
+    "works": [
+      {
+        "title": "Laboratorio 1",
+        "type": "laboratorio",
+        "summary": "Maquetación semántica y responsive.",
+        "date": "2025-09-01",
+        "tech": ["HTML","CSS"],
+        "repo": "https://github.com/",
+        "demo": "https://portafolio.netlify.app/lab1/"
+      }
+    ]
+  }
+
+  ,{
+    "code": "IC2001",
+    "name": "Principios de Sistemas operativos",
+    "semester": "I-2025",
+    "description": "Curso sobre Sistemas operativos.",
+    "works": [
+      {
+        "title": "Mini pc",
+        "type": "Tarea",
+        "description": "Desarrollo de un mini pc",
+        "date": "2024-05-20",
+        "technologies": ["Java", "Netbeans"],
+        "link": "https://github.com/2025-Semestre-2/tarea-1-HillaryMalespin"
+      }
+    ]
+  }
+
+]
