@@ -2,6 +2,8 @@
 
 Sitio estático (HTML + CSS) para el portafolio de trabajos por curso y perfil profesional. Con modo claro/oscuro y la accesibilidad se implementan solo con CSS y HTML (por el momento).
 
+link netlify: portafoliohillarymalespin.netlify.app 
+
 ## 🌳 Estructura del proyecto
 ```
 src/
