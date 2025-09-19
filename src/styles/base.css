@@ -1,22 +1,129 @@
-/* base.css */
+/* ================================
+   Paleta con variables
+================================ */
 :root {
-  --color-fondo: #0d1b2a;
-  --color-primario: #1b263b;
-  --color-secundario: #415a77;
-  --color-texto: #e0e1dd;
-  --color-acento: #00b4d8;
-  --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Light theme (default) */
+  --color-bg: #a1b4e2;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #1f2937;
+  --color-text-muted: #4b5563;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
 }
 
-* {
+[data-theme="dark"] {
+  --color-bg: #091532;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-accent: #38bdf8;
+  --color-accent-hover: #0ea5e9;
+}
+
+
+
+/* ================================
+   Global
+================================ */
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
 }
 
-body {
-  font-family: var(--fuente-base);
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
-  line-height: 1.6;
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ================================
+   Navbar
+================================ */
+.navbar {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--color-text);
+  margin: 0 1.2rem;
+  font-weight: 500;
+}
+
+/* ================================
+   Contenedor principal
+================================ */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* ================================
+   Secciones y títulos
+================================ */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.semester-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--color-text);
+}
+
+/* ================================
+  Tarjetas de curso/proyecto
+================================ */
+.course-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+.course-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Curso como "botón" */
+.course-badge {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  transition: background-color 0.2s ease;
+}
+.course-badge:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* ================================
+ Detalles
+================================ */
+.course-details {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
 }

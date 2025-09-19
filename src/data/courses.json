@@ -10,17 +10,43 @@
         "type": "laboratorio",
         "summary": "Maquetación semántica y responsive.",
         "date": "2025-09-01",
-        "tech": ["HTML","CSS"],
-        "repo": "https://github.com/",
+        "tech": ["HTML", "CSS"],
+        "repo": "https://github.com/HillaryMalespin/desarrollo-moderno-hillary.git",
         "demo": "https://portafolio.netlify.app/lab1/"
+      },
+      {
+        "title": "Laboratorio 2",
+        "type": "laboratorio",
+        "summary": "Uso de media queries, flexbox y grid para diseño adaptable.",
+        "date": "2025-09-08",
+        "tech": ["HTML", "CSS"],
+        "repo": "https://github.com/HillaryMalespin/lab2.git",
+        "demo": "https://caribetico.netlify.app/"
+      },
+      {
+        "title": "Laboratorio 3",
+        "type": "laboratorio",
+        "summary": "Selectores avanzados, especificidad, box model y positioning.",
+        "date": "2025-09-15",
+        "tech": ["HTML", "CSS"],
+        "repo": "https://github.com/HillaryMalespin/lab2/pull/1",
+        "demo": "https://caribetico02.netlify.app/"
+      },
+      {
+        "title": "Laboratorio 5",
+        "type": "laboratorio",
+        "summary": "Pulido responsive: diseño con breakpoints para móvil, tablet y desktop. Menú hamburguesa, cards adaptables y hero con imágenes responsivas.",
+        "date": "2025-09-29",
+        "tech": ["HTML", "CSS", "Flexbox", "Grid", "Media Queries"],
+        "repo": "https://github.com/HillaryMalespin/lab2/tree/lab5",
+        "demo": "https://caribetico5.netlify.app/"
       }
     ]
-  }
-
-  ,{
+  },
+  {
     "code": "IC2001",
     "name": "Principios de Sistemas operativos",
-    "semester": "I-2025",
+    "semester": "II-2025",
     "description": "Curso sobre Sistemas operativos.",
     "works": [
       {
@@ -32,6 +58,22 @@
         "link": "https://github.com/2025-Semestre-2/tarea-1-HillaryMalespin"
       }
     ]
+  },
+  
+  {
+    "code": "IC-4302",
+    "name": "Bases de Datos II",
+    "semester": "II-2025",
+    "description": "Creación de un API REST para comunicarse con SQL Server (AdventureWorks), implementando operaciones CRUD con procedimientos almacenados, desplegado en Linux y documentado con pasos de instalación y pruebas.",
+    "works": [
+      {
+        "title": "Tarea 1 – API",
+        "type": "tarea",
+        "summary": "Implementación de un API REST con Node.js y SQL Server usando AdventureWorks. Incluye CRUD completo mediante stored procedures, documentación detallada y pruebas.",
+        "date": "2025-09-14",
+        "technologies": ["Node.js", "SQL Server", "Stored Procedures", "REST API"],
+        "repo": "https://github.com/2025-Semestre-2/tarea-1-HillaryMalespin-1"
+      }
+    ]
   }
-
 ]

@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/components.css">
-  <link rel="stylesheet" href="styles/overrides.css">
 
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,48 +26,44 @@
       "description": "Soy estudiante del TEC con interés en desarrollo web, accesibilidad y soluciones innovadoras."
     }
   </script>
-
 </head>
 <body>
   <!-- Encabezado principal -->
-  <header role="banner">
-    <h1 id="profile-name">Portafolio</h1>
-  </header>
+  <header role="banner" class="header">
+    <div class="header-container">
+      <h1 id="profile-name">Portafolio</h1>
+      
+      <!-- Botón menú hamburguesa -->
+      <button class="nav-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
 
-  <!-- Navegación -->
-  <nav role="navigation" aria-label="Menú principal">
-    <ul>
-      <li><a href="#introduccion">Sobre mí</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+      <!-- Navegación -->
+      <nav role="navigation" aria-label="Menú principal">
+        <ul class="nav-links">
+          <li><a href="#introduccion">About me</a></li>
+          <li><a href="proyectos.html">Projects</a></li> <!-- antes era #proyectos -->
+          <li><a href="#contacto">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- Contenido principal -->
   <main id="main-content">
     <!-- Introducción cargada desde profile.json -->
     <section id="introduccion" aria-labelledby="intro-title">
       <img id="profile-photo" alt="Foto de perfil de Hillary Malespín">
-      <h2 id="intro-title">Sobre mí</h2>
       <p id="profile-bio"></p>
       <p id="profile-intro"></p>
     </section>
 
-    <!--secciones: proyectos, skills, etc. -->
 
-    <!-- Sección de cursos -->
-    <section id="courses" class="section">
-        <h2>Trabajos Académicos</h2>
-        <div id="courses-container"></div>
-    </section>
-
+    <!-- Sección About -->
     <section id="about-me" class="about-section">
       <h2>About Me</h2>
       <div id="about-content"></div>
     </section>
-
-
-
   </main>
 
   <!-- Pie de página -->
@@ -77,5 +73,7 @@
 
   <!-- JS -->
   <script src="js/main.js" defer></script>
+  <script src="js/theme.js" defer></script>
+
 </body>
 </html>

@@ -1,12 +1,17 @@
-/* Contenedor de introducción */
+/* ================================
+   Componentes
+   ================================ */
+
+/*Contenedor de introducción */
 #introduccion {
-  background: var(--color-primario);
+  background: #1e293b;
+  color: var(--color-text);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
   margin: 2rem auto;
   max-width: 800px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
 
   display: flex;
   flex-direction: column;
@@ -14,20 +19,12 @@
   gap: 1.5rem;
 }
 
-/* Imagen de perfil */
 #introduccion img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 4px solid var(--color-acento);
   object-fit: cover;
-}
-
-/* Texto de presentación */
-#introduccion p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  max-width: 600px;
 }
 
 #introduccion h2 {
@@ -44,154 +41,61 @@
   color: var(--color-texto);
 }
 
-.course-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.course-header h3 {
-    color: var(--accent-color, #38bdf8);
-    margin: 0;
-}
-
-.toggle-btn {
-    background: var(--accent-color, #38bdf8);
-    border: none;
-    color: #0f172a;
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.toggle-btn:hover {
-    background: #0ea5e9;
-}
-
-.course-content {
-    margin-top: 1rem;
-}
-
-.course-card {
-    background: var(--card-bg, #1e293b);
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.course-card h3 {
-    color: var(--accent-color, #38bdf8);
-    margin-bottom: 0.5rem;
-}
-
-.works {
-    margin-top: 1rem;
-}
-
-.work-card {
-    background: var(--semi-dark, #0f172a);
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 8px;
-}
-
-.work-card h4 {
-    margin-bottom: 0.3rem;
-    color: #f8fafc;
-}
-
-.work-card a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-.work-card a:hover {
-    text-decoration: underline;
-}
-
-.about-card {
-  background: var(--semi-dark);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  text-align: center;
-}
-
-.about-card h3 {
-  margin-top: 10px;
-}
-
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid var(--highlight);
-}
-
-.skill-category {
-  margin: 10px 0;
-  text-align: left;
-}
+/* About Section */
 .about-section {
-  background: #1e293b; /* fondo oscuro dentro de la tarjeta */
-  color: #eaeaea;
+  background: #1e293b;
+  color: var(--color-text);
   padding: 2.5rem;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   align-items: start;
 }
 
-/* Foto */
+.about-container {
+  color: #1e293b;
+  background: 1e293b;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
 .about-section img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #38bdf8;
+  border: 3px solid var(--color-primario);
   margin-bottom: 1rem;
 }
 
-/* Nombre */
 .about-section h3 {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: var(--color-texto);
 }
 
-/* Texto descriptivo */
 .about-section p {
-  color: #cbd5e1;
+  color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
-/* Títulos */
-.about-section h2, 
+.about-section h2,
 .about-section h4 {
-  color: #38bdf8;
+  color: var(--color-primario);
   margin-bottom: 0.8rem;
   border-bottom: 2px solid rgba(56, 189, 248, 0.3);
   padding-bottom: 0.3rem;
 }
 
-/* Skills en chips */
+/* Skills */
 .skills-list li {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.08);
-  color: #d1d5db;
+  background: #1e293b;
+  color: var(--color-text);
   padding: 0.4rem 0.8rem;
   margin: 0.3rem;
   border-radius: 6px;
@@ -200,7 +104,117 @@
 }
 
 .skills-list li:hover {
-  background: rgba(56, 189, 248, 0.3);
+  background: var(--color-primario);
   color: #fff;
   transform: scale(1.05);
+}
+
+/* Certifications */
+.certifications-container a.cert-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.certifications-container a.cert-link:hover .cert-card {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* components.css */
+#certifications h2 {
+  color: #4db8ff; /* color del título "Certifications" */
+}
+
+#certifications h3 {
+  color: #ffcc00; /* color de cada nombre de certificación */
+}
+
+#certifications p {
+  color: #cccccc; /* color del detalle (institución y año) */
+}
+
+
+/* Navbar */
+
+.nav-brand {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: var(--color-accent);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Botón hamburguesa */
+.nav-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1e293b;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    display: none;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.navbar {
+  background: var(--color-card);
+  color: var(--color-text);
+}
+
+.course-card .btn {
+  background: var(--color-primario);
+  color: #fff;
 }

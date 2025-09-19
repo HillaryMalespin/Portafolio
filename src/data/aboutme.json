@@ -1,41 +1,49 @@
 {
   "name": "Hillary Malespín",
   "photo": "img/yo2.jpg",
-  "description": "Soy estudiante de Ingeniería en Computación en el TEC. Me apasiona el desarrollo de software, la investigación y la creación de soluciones prácticas. Mi objetivo profesional es especializarme en desarrollo web y contribuir a proyectos innovadores con impacto social.",
+  "description": "I am a Computer Engineering student at TEC. I am passionate about software development, research, and the creation of practical solutions. My professional goal is to specialize in web development and contribute to innovative projects with social impact.",
 
   "skills": [
     {
       "category": "Lenguajes de Programación",
-      "items": ["Java – Avanzado", "C – Intermedio", "Python – Avanzado", "JavaScript – Intermedio"]
+      "items": ["Java – Avanzado", "C – Intermedio", "C++ - Intermedio","Python – Avanzado", "JavaScript – Intermedio", "C# – intermedio", "HTML/CSS – Intermedio", "TypeScript – Básico", "Haskell – Básico", "SML - Básico"]
     },
     {
       "category": "Frameworks y Librerías",
-      "items": ["React – Intermedio", "Vue.js – Intermedio", ".NET – Básico"]
+      "items": ["React – Intermedio", "Vue.js – Intermedio", ".NET – Básico", "Angular – intermedio"]
     },
     {
       "category": "Bases de Datos",
-      "items": ["SQL Server – Intermedio", "MySQL – Intermedio"]
+      "items": ["SQL Server – Intermedio", "MySQL – Intermedio", "Oracle – Básico"]
     },
     {
       "category": "Herramientas",
-      "items": ["Git/GitHub – Avanzado", "Visual Studio Code – Avanzado", "Azure – Básico"]
+      "items": ["Git/GitHub – Avanzado", "Visual Studio Code – Avanzado", "Azure – Básico", "Trello – Intermedio", "NetBeans – Intermedio"]
     }
   ],
 
   "certifications": [
     {
-      "name": "Certificación en ",
-      "institution": "Algun lugar",
-      "year": "2024"
+      "name": "Azure Cloud Specialist",
+      "institution": "Elev8 Education",
+      "year": "2023",
+      "link": "https://www.credly.com/badges/c034b4a4-d3a2-448c-9fe6-06c1b41d1073/public_url"
     },
     {
-      "name": "Curso de Introducción a algo",
-      "institution": "algun lugar",
-      "year": "2023"
+      "name": "Cybersecurity Bootcamp",
+      "institution": "IBM",
+      "year": "2023",
+      "link": "https://www.credly.com/badges/027baea5-a395-4521-bfde-6107ec8ea0ac/public_url"
+    },
+    {
+      "name": "Scrum Master",
+      "institution": "Certiprof",
+      "year": "2025",
+      "link": "https://www.credly.com/badges/a78ed71a-b161-4847-886d-84631948026e/public_url"
     }
   ],
 
-  "linkedin": "https://www.linkedin.com/in/hillarymalespin/",
-  "github": "https://github.com/hillarymalespin",
+  "linkedin": "https://www.linkedin.com/in/hillarymalespinulloa/",
+  "github": "https://github.com/HillaryMalespin",
   "email": "malespinulloa03@gmail.com"
 }
