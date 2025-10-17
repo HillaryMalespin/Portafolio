@@ -1,79 +1,79 @@
 [
   {
     "code": "IC8057",
-    "name": "Introducción al Desarrollo de Páginas Web",
+    "name": "Introduction to Web Page Development",
     "semester": "II-2025",
-    "techDesc": "HTML, CSS, JS, accesibilidad y despliegue.",
+    "techDesc": "HTML, CSS, JS, accessibility, and deployment.",
     "works": [
       {
-        "title": "Laboratorio 1",
-        "type": "laboratorio",
-        "summary": "Maquetación semántica y responsive.",
+        "title": "Lab 1",
+        "type": "laboratory",
+        "summary": "Semantic and responsive layout.",
         "date": "2025-09-01",
         "tech": ["HTML", "CSS"],
         "repo": "https://github.com/HillaryMalespin/desarrollo-moderno-hillary.git",
         "demo": "https://portafolio.netlify.app/lab1/"
       },
       {
-        "title": "Laboratorio 2",
-        "type": "laboratorio",
-        "summary": "Uso de media queries, flexbox y grid para diseño adaptable.",
+        "title": "Lab 2",
+        "type": "laboratory",
+        "summary": "Use of media queries, flexbox, and grid for adaptive design.",
         "date": "2025-09-08",
         "tech": ["HTML", "CSS"],
         "repo": "https://github.com/HillaryMalespin/lab2.git",
         "demo": "https://caribetico.netlify.app/"
       },
       {
-        "title": "Laboratorio 3",
-        "type": "laboratorio",
-        "summary": "Selectores avanzados, especificidad, box model y positioning.",
+        "title": "Lab 3",
+        "type": "laboratory",
+        "summary": "Advanced selectors, specificity, box model, and positioning.",
         "date": "2025-09-15",
         "tech": ["HTML", "CSS"],
         "repo": "https://github.com/HillaryMalespin/lab2/pull/1",
         "demo": "https://caribetico02.netlify.app/"
       },
       {
-        "title": "Laboratorio 5",
-        "type": "laboratorio",
-        "summary": "Pulido responsive: diseño con breakpoints para móvil, tablet y desktop. Menú hamburguesa, cards adaptables y hero con imágenes responsivas.",
+        "title": "Lab 5",
+        "type": "laboratory",
+        "summary": "Responsive polish: design with breakpoints for mobile, tablet, and desktop. Hamburger menu, adaptable cards, and hero section with responsive images.",
         "date": "2025-09-29",
         "tech": ["HTML", "CSS", "Flexbox", "Grid", "Media Queries"],
         "repo": "https://github.com/HillaryMalespin/lab2/tree/lab5",
         "demo": "https://caribetico5.netlify.app/"
-      }, 
+      },
       {
-        "title": "Laboratorio 6",
-        "type": "laboratorio",
-        "summary": "Manipulación del DOM y eventos.",
+        "title": "Lab 6",
+        "type": "laboratory",
+        "summary": "DOM manipulation and event handling.",
         "date": "2025-19-09",
         "tech": ["HTML", "CSS", "JS"]
       },
       {
-        "title": "Laboratorio 7",
-        "type": "laboratorio",
-        "summary": "Presentación acerca de estrategia de manejo de errores y excepciones.",
+        "title": "Lab 7",
+        "type": "laboratory",
+        "summary": "Presentation about error and exception handling strategies.",
         "date": "2025-26-09",
         "tech": ["HTTP", "JSON", "API"]
       },
       {
-        "title": "Laboratorio 8",
-        "type": "laboratorio",
-        "summary": "Desarrollar una API REST con Node.js y Express que implemente buenas prácticas de seguridad, manejo de errores, validación de datos y estandarización de respuestas, utilizando archivos JSON como base de datos simulada y documentando los endpoints en Postman.",
+        "title": "Lab 8",
+        "type": "laboratory",
+        "summary": "Develop a REST API using Node.js and Express implementing good practices for security, error handling, data validation, and standardized responses. Use JSON files as a simulated database and document endpoints in Postman.",
         "date": "2025-03-10",
         "tech": ["POSTMAN", "Javascript", "HTML"]
       },
       {
-        "title": "Laboratorio 9",
-        "type": "laboratorio",
-        "summary": "Transformación de los endpoints REST a GraphQL.",
+        "title": "Lab 9",
+        "type": "laboratory",
+        "summary": "Transformation of REST endpoints to GraphQL.",
         "date": "2025-09-29",
         "tech": ["POSTMAN", "Javascript", "HTML"],
         "repo": "https://github.com/AndrewLopezHerrera/Laboratorio9DesarrolloWeb.git"
       },
       {
         "title": "Banco Orbita",
-        "type": "Proyecto",
-        "summary": "Construcción de una plataforma que simule la interfaz y los flujos principales de una plataforma bancaria en línea.",
+        "type": "Project",
+        "summary": "Development of a platform that simulates the interface and main workflows of an online banking system.",
         "date": "2025-28-09",
         "tech": ["Javascript", "HTML", "React"],
         "repo": "https://github.com/HillaryMalespin/Proyecto_Dise-o_Web",
@@ -83,31 +83,30 @@
   },
   {
     "code": "IC2001",
-    "name": "Principios de Sistemas operativos",
+    "name": "Operating Systems Principles",
     "semester": "II-2025",
-    "description": "Curso sobre Sistemas operativos.",
+    "description": "Course on operating systems.",
     "works": [
       {
-        "title": "Mini pc",
-        "type": "Tarea",
-        "description": "Desarrollo de un mini pc",
+        "title": "Mini PC",
+        "type": "Assignment",
+        "description": "Development of a mini PC.",
         "date": "2024-05-20",
         "technologies": ["Java", "Netbeans"],
         "link": "https://github.com/2025-Semestre-2/tarea-1-HillaryMalespin"
       }
     ]
   },
-  
   {
     "code": "IC-4302",
-    "name": "Bases de Datos II",
+    "name": "Databases II",
     "semester": "II-2025",
-    "description": "Creación de un API REST para comunicarse con SQL Server (AdventureWorks), implementando operaciones CRUD con procedimientos almacenados, desplegado en Linux y documentado con pasos de instalación y pruebas.",
+    "description": "Creation of a REST API to communicate with SQL Server (AdventureWorks), implementing CRUD operations through stored procedures, deployed on Linux, and documented with installation and testing steps.",
     "works": [
       {
-        "title": "Tarea 1 – API",
-        "type": "tarea",
-        "summary": "Implementación de un API REST con Node.js y SQL Server usando AdventureWorks. Incluye CRUD completo mediante stored procedures, documentación detallada y pruebas.",
+        "title": "Assignment 1 – API",
+        "type": "assignment",
+        "summary": "Implementation of a REST API using Node.js and SQL Server with AdventureWorks. Includes full CRUD using stored procedures, detailed documentation, and testing.",
         "date": "2025-09-14",
         "technologies": ["Node.js", "SQL Server", "Stored Procedures", "REST API"],
         "repo": "https://github.com/2025-Semestre-2/tarea-1-HillaryMalespin-1"

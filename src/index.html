@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Hillary Malespín</title>
+  <title>Hillary Malespín Portfolio</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/base.css">
@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="styles/components.css">
   <link rel="stylesheet" href="styles/recomendacionStyle.css">
   <link rel="stylesheet" href="styles/experiencia.css">
-
-
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -26,71 +24,77 @@
         "https://www.linkedin.com/in/hillarymalespin",
         "https://github.com/hillarymalespin"
       ],
-      "jobTitle": "Estudiante de Ingeniería en Computación",
-      "description": "Soy estudiante del TEC con interés en desarrollo web, accesibilidad y soluciones innovadoras."
+      "jobTitle": "Computer Engineering Student",
+      "description": "I am a TEC student interested in web development, accessibility, and innovative solutions."
     }
   </script>
 </head>
 <body>
-  <!-- Encabezado principal -->
+  <!-- Main Header -->
   <header role="banner" class="header">
     <div class="header-container">
-      <h1 id="profile-name">Portafolio</h1>
+      <h1 id="profile-name">Portfolio</h1>
       
-      <!-- Botón menú hamburguesa -->
-      <button class="nav-toggle" aria-label="Abrir menú">
+      <!-- Hamburger Menu Button -->
+      <button class="nav-toggle" aria-label="Open menu">
         ☰
       </button>
 
-      <!-- Navegación -->
-      <nav role="navigation" aria-label="Menú principal">
+      <!-- Navigation -->
+      <nav role="navigation" aria-label="Main menu">
         <ul class="nav-links">
-          <li><a href="#introduccion">About me</a></li>
-          <li><a href="proyectos.html">Projects</a></li> <!-- antes era #proyectos -->
+          <li><a href="#introduccion">About Me</a></li>
+          <li><a href="proyectos.html">Projects</a></li>
           <li><a href="#contacto">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Contenido principal -->
+  <!-- Main Content -->
   <main id="main-content">
-    <!-- Introducción cargada desde profile.json -->
+    <!-- Introduction loaded from profile.json -->
     <section id="introduccion" aria-labelledby="intro-title">
-      <img id="profile-photo" alt="Foto de perfil de Hillary Malespín">
+      <img id="profile-photo" alt="Profile picture of Hillary Malespín">
       <p id="profile-bio"></p>
       <p id="profile-intro"></p>
     </section>
 
-
-    <!-- Sección About -->
+    <!-- About Section -->
     <section id="about-me" class="about-section">
       <h2>About Me</h2>
       <div id="about-content"></div>
     </section>
 
+    <!-- Work Experience Section -->
     <section id="experiencia" class="experiencia">
-      <h2>Experiencia Laboral</h2>
+      <h2>Work Experience</h2>
+
+      <div class="cv-container">
+        <a href="assets/cv.pdf" download class="btn-cv">
+          Download CV
+        </a>
+      </div>
+
       <div id="lista-experiencia" class="lista-experiencia"></div>
     </section>
 
-    <!-- Sección recomendaciones -->
+    <!-- Recommendations Section -->
     <section id="recomendaciones" class="recomendaciones">
-      <h2>Recomendaciones de compañeros</h2>
-      <p>Comparte tu opinión sobre mi desempeño, colaboración o habilidades.</p>
+      <h2>Partners’ Recommendations</h2>
+      <p>Share your opinion about my performance, collaboration, or skills.</p>
 
-      <form id="form-recomendacion">
-        <input type="text" id="nombre" placeholder="Tu nombre" required />
-        <textarea id="mensaje" placeholder="Escribe tu recomendación..." required></textarea>
-        <button type="submit">Enviar recomendación</button>
+      <form id="form-recommendation">
+        <input type="text" id="name" placeholder="Your name" required />
+        <textarea id="message" placeholder="Write your recommendation..." required></textarea>
+        <button type="submit">Send Recommendation</button>
       </form>
 
-      <div id="lista-recomendaciones" class="lista-recomendaciones"></div>
-  </section>
-
+      <div id="recommendation-list" class="recommendation-list"></div>
+    </section>
   </main>
 
-  <!-- Pie de página -->
+  <!-- Footer -->
   <footer role="contentinfo">
     <p>&copy; 2025 Hillary Malespín</p>
   </footer>
@@ -100,7 +104,6 @@
   <script src="js/theme.js" defer></script>
   <script src="js/recomendaciones.js"></script>
   <script src="js/experiencia.js"></script>
-
 
 </body>
 </html>
