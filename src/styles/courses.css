@@ -120,7 +120,7 @@
 
 /* ===== Header ===== */
 header {
-    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); /* degradado elegante */
+    background:(90deg, #0f2027);
     padding: 20px 0;
     text-align: center;
     color: white;
@@ -166,4 +166,40 @@ nav ul li a:hover {
     background: #1e90ff;
     color: #fff;
     box-shadow: 0 4px 10px rgba(30, 144, 255, 0.5);
+}
+
+.filters {
+  background-color: #262a34;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.filter-group button {
+  padding: 0.5rem 1rem;
+  background-color: #1f6feb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-group button:hover {
+  background-color: #155ac7;
 }

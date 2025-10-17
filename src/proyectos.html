@@ -1,46 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos Académicos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Projects</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/courses.css">
-  <link rel="stylesheet" href="styles/layout.css">
-
-
-
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/courses.css" />
+  <link rel="stylesheet" href="styles/filters.css" />
 </head>
+
 <body>
-  <!-- Encabezado -->
+  <!-- ===== Header ===== -->
   <header>
-    <h1>Trabajos Académicos</h1>
+    <h1>Academic Projects</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="proyectos.html" class="active">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contenido -->
+  <!-- ===== Main Content ===== -->
   <main>
     <section id="courses" class="section">
-      <h2>Mis cursos y proyectos</h2>
+      <h2>My Courses and Projects</h2>
+
+      <!-- ===== Filter Section ===== -->
+      <div id="filters" class="filters">
+        <h3>Filter Projects</h3>
+        <div class="filter-group">
+          <label for="filterType">Type:</label>
+          <select id="filterType">
+            <option value="">All</option>
+            <!-- Dynamically filled from JSON -->
+          </select>
+
+          <label for="filterTech">Technology:</label>
+          <select id="filterTech">
+            <option value="">All</option>
+            <!-- Dynamically filled from JSON -->
+          </select>
+
+          <label for="filterDate">Date:</label>
+          <input type="month" id="filterDate" />
+
+          <button id="clearFilters">Clear Filters</button>
+        </div>
+      </div>
+
+      <!-- ===== Courses Container ===== -->
       <div id="courses-container"></div>
     </section>
   </main>
 
-  <!-- Pie -->
+  <!-- ===== Footer ===== -->
   <footer>
     <p>&copy; 2025 Hillary Malespín</p>
   </footer>
 
-  <!-- JS -->
-  <script src="js/proyectos.js" type="module" defer></script>
+  <!-- ===== JavaScript ===== -->
+  <script type="module" src="js/proyectos.js" defer></script>
   <script src="js/theme.js" defer></script>
+  <script>
+    // Populate filters dynamically from the JSON data
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const response = await fetch("./data/courses.json");
+        const courses = await response.json();
+
+        const typeSet = new Set();
+        const techSet = new Set();
+
+        // Extract unique values from JSON
+        courses.forEach(course => {
+          course.works?.forEach(work => {
+            if (work.type) typeSet.add(work.type);
+            if (Array.isArray(work.tech)) {
+              work.tech.forEach(t => techSet.add(t));
+            }
+          });
+        });
+
+        // Populate Type filter
+        const typeSelect = document.getElementById("filterType");
+        typeSet.forEach(type => {
+          const opt = document.createElement("option");
+          opt.value = type;
+          opt.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+          typeSelect.appendChild(opt);
+        });
+
+        // Populate Technology filter
+        const techSelect = document.getElementById("filterTech");
+        techSet.forEach(tech => {
+          const opt = document.createElement("option");
+          opt.value = tech;
+          opt.textContent = tech;
+          techSelect.appendChild(opt);
+        });
+
+      } catch (error) {
+        console.error("Error loading filters:", error);
+      }
+    });
+  </script>
 </body>
 </html>

@@ -9,7 +9,7 @@ async function loadCourses() {
     const response = await fetch("./data/courses.json");
     const courses = await response.json();
 
-    // Agrupar por semestre
+    // Group courses by semester
     const grouped = {};
     courses.forEach(course => {
       if (!grouped[course.semester]) {
@@ -18,18 +18,19 @@ async function loadCourses() {
       grouped[course.semester].push(course);
     });
 
-    // Renderizar
+    // Render each semester
     Object.entries(grouped).forEach(([semester, courses]) => {
       const semesterDiv = document.createElement("div");
       semesterDiv.classList.add("semester");
 
       const semesterTitle = document.createElement("h2");
-      semesterTitle.textContent = `Semestre ${semester}`;
+      semesterTitle.textContent = `Semester ${semester}`;
       semesterDiv.appendChild(semesterTitle);
 
       const coursesGrid = document.createElement("div");
       coursesGrid.classList.add("courses");
 
+      // Render each course card
       courses.forEach(course => {
         const card = document.createElement("div");
         card.classList.add("course-card");
@@ -52,16 +53,21 @@ async function loadCourses() {
 
         let description = course.techDesc || course.description || "";
 
+        // 
         content.innerHTML = `
           <p>${description}</p>
           <ul>
-            ${course.works.map(w => `
+            ${course.works.map(work => `
               <li>
-                <strong>${w.title}</strong> (${w.type}) - ${w.date}<br>
-                ${w.summary || w.description || ""}<br>
-                ${w.repo ? `<a href="${w.repo}" target="_blank">Repositorio</a>` : ""}
-                ${w.demo ? ` | <a href="${w.demo}" target="_blank">Demo</a>` : ""}
-                ${w.link ? `<a href="${w.link}" target="_blank">Ver trabajo</a>` : ""}
+                <strong>${work.title}</strong> 
+                <em>(${work.type})</em> - ${work.date}<br>
+                ${work.summary || work.description || ""}<br>
+                ${work.repo ? `<a href="${work.repo}" target="_blank">Repository</a>` : ""}
+                ${work.demo ? ` | <a href="${work.demo}" target="_blank">Demo</a>` : ""}
+                ${work.link ? ` | <a href="${work.link}" target="_blank">View work</a>` : ""}
+                ${work.tech && work.tech.length > 0 
+                  ? `<p><strong>Technologies:</strong> ${work.tech.join(", ")}</p>` 
+                  : ""}
               </li>
             `).join("")}
           </ul>
@@ -82,7 +88,7 @@ async function loadCourses() {
     });
 
   } catch (error) {
-    container.innerHTML = "<p>Error al cargar los cursos.</p>";
+    container.innerHTML = "<p>Error loading courses.</p>";
     console.error(error);
   }
 }
