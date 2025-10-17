@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/recomendacionStyle.css">
+
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -64,6 +66,21 @@
       <h2>About Me</h2>
       <div id="about-content"></div>
     </section>
+
+    <!-- Sección recomendaciones -->
+    <section id="recomendaciones" class="recomendaciones">
+      <h2>Recomendaciones de compañeros</h2>
+      <p>Comparte tu opinión sobre mi desempeño, colaboración o habilidades.</p>
+
+      <form id="form-recomendacion">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <textarea id="mensaje" placeholder="Escribe tu recomendación..." required></textarea>
+        <button type="submit">Enviar recomendación</button>
+      </form>
+
+      <div id="lista-recomendaciones" class="lista-recomendaciones"></div>
+  </section>
+
   </main>
 
   <!-- Pie de página -->
@@ -74,6 +91,8 @@
   <!-- JS -->
   <script src="js/main.js" defer></script>
   <script src="js/theme.js" defer></script>
+  <script src="js/recomendaciones.js"></script>
+
 
 </body>
 </html>
