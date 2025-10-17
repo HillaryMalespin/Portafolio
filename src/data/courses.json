@@ -40,6 +40,44 @@
         "tech": ["HTML", "CSS", "Flexbox", "Grid", "Media Queries"],
         "repo": "https://github.com/HillaryMalespin/lab2/tree/lab5",
         "demo": "https://caribetico5.netlify.app/"
+      }, 
+      {
+        "title": "Laboratorio 6",
+        "type": "laboratorio",
+        "summary": "Manipulación del DOM y eventos.",
+        "date": "2025-19-09",
+        "tech": ["HTML", "CSS", "JS"]
+      },
+      {
+        "title": "Laboratorio 7",
+        "type": "laboratorio",
+        "summary": "Presentación acerca de estrategia de manejo de errores y excepciones.",
+        "date": "2025-26-09",
+        "tech": ["HTTP", "JSON", "API"]
+      },
+      {
+        "title": "Laboratorio 8",
+        "type": "laboratorio",
+        "summary": "Desarrollar una API REST con Node.js y Express que implemente buenas prácticas de seguridad, manejo de errores, validación de datos y estandarización de respuestas, utilizando archivos JSON como base de datos simulada y documentando los endpoints en Postman.",
+        "date": "2025-03-10",
+        "tech": ["POSTMAN", "Javascript", "HTML"]
+      },
+      {
+        "title": "Laboratorio 9",
+        "type": "laboratorio",
+        "summary": "Transformación de los endpoints REST a GraphQL.",
+        "date": "2025-09-29",
+        "tech": ["POSTMAN", "Javascript", "HTML"],
+        "repo": "https://github.com/AndrewLopezHerrera/Laboratorio9DesarrolloWeb.git"
+      },
+      {
+        "title": "Banco Orbita",
+        "type": "Proyecto",
+        "summary": "Construcción de una plataforma que simule la interfaz y los flujos principales de una plataforma bancaria en línea.",
+        "date": "2025-28-09",
+        "tech": ["Javascript", "HTML", "React"],
+        "repo": "https://github.com/HillaryMalespin/Proyecto_Dise-o_Web",
+        "demo": "https://bancoorbita.netlify.app/"
       }
     ]
   },
