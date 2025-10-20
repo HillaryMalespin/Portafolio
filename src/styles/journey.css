@@ -153,3 +153,64 @@
     left: 0;
   }
 }
+
+#future-goals {
+  background: linear-gradient(180deg, #0e1525 0%, #141b2d 100%);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#future-goals h2 {
+  font-size: 2rem;
+  color: var(--accent, #5bc0be);
+  text-shadow: 0 0 10px rgba(91, 192, 190, 0.5);
+  margin-bottom: 1rem;
+}
+
+#future-goals .intro {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  color: #d1d1d1;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.goals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.goal-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(91, 192, 190, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(91, 192, 190, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(91, 192, 190, 0.4);
+}
+
+.goal-card h3 {
+  color: var(--accent, #5bc0be);
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.goal-card p {
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .goal-card {
+    padding: 1.2rem;
+  }
+}
+
