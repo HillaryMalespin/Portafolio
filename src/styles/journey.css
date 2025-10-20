@@ -214,3 +214,10 @@
   }
 }
 
+@media screen {
+    #future-goals {
+        padding: 3rem 1rem;
+    }
+    
+}
+

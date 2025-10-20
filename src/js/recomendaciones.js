@@ -1,37 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("form-recomendacion");
-  const lista = document.getElementById("lista-recomendaciones");
+  const form = document.getElementById("form-recommendation");
+  const nameInput = document.getElementById("name");
+  const messageInput = document.getElementById("message");
+  const list = document.getElementById("recommendation-list");
 
-  // Cargar recomendaciones existentes
-  const recomendaciones = JSON.parse(localStorage.getItem("recomendaciones")) || [];
-  mostrarRecomendaciones(recomendaciones);
+  // Cargar recomendaciones guardadas
+  const stored = JSON.parse(localStorage.getItem("recommendations")) || [];
+  stored.forEach(rec => addRecommendation(rec.name, rec.message));
 
-  // Manejar envío
+  // Escuchar el envío del formulario
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const nombre = document.getElementById("nombre").value.trim();
-    const mensaje = document.getElementById("mensaje").value.trim();
+    const name = nameInput.value.trim();
+    const message = messageInput.value.trim();
 
-    if (nombre && mensaje) {
-      const nueva = { nombre, mensaje, fecha: new Date().toLocaleDateString() };
-      recomendaciones.push(nueva);
-      localStorage.setItem("recomendaciones", JSON.stringify(recomendaciones));
-      mostrarRecomendaciones(recomendaciones);
-      form.reset();
-    }
+    if (!name || !message) return;
+
+    const recommendation = { name, message };
+
+    // Mostrar la nueva recomendación en pantalla
+    addRecommendation(name, message);
+
+    // Guardar en localStorage
+    stored.push(recommendation);
+    localStorage.setItem("recommendations", JSON.stringify(stored));
+
+    // Limpiar el formulario
+    nameInput.value = "";
+    messageInput.value = "";
   });
 
-  function mostrarRecomendaciones(listaRec) {
-    lista.innerHTML = "";
-    listaRec.forEach((r) => {
-      const div = document.createElement("div");
-      div.classList.add("recomendacion");
-      div.innerHTML = `
-        <h3>${r.nombre}</h3>
-        <p>"${r.mensaje}"</p>
-        <span class="fecha">${r.fecha}</span>
-      `;
-      lista.appendChild(div);
-    });
+  // Función para crear y mostrar la recomendación
+  function addRecommendation(name, message) {
+    const div = document.createElement("div");
+    div.classList.add("recommendation-item");
+    div.innerHTML = `
+      <h4>${name}</h4>
+      <p>${message}</p>
+    `;
+    div.style.opacity = "0";
+    list.prepend(div);
+
+    // Animación de aparición
+    setTimeout(() => {
+      div.style.transition = "opacity 0.5s ease-in-out";
+      div.style.opacity = "1";
+    }, 100);
   }
 });
