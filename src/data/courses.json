@@ -78,6 +78,42 @@
         "tech": ["Javascript", "HTML", "React"],
         "repo": "https://github.com/HillaryMalespin/Proyecto_Dise-o_Web",
         "demo": "https://bancoorbita.netlify.app/"
+      },
+      {
+        "title": "Lab 10 ",
+        "type": "laboratory",
+        "summary": "Development of a React component",
+        "date": "2025-24-10",
+        "tech": ["Javascript", "HTML", "React"],
+        "repo": "https://github.com/HillaryMalespin/Lab10-desarrollo-web.git",
+        "demo": ""
+      },
+      {
+        "title": "Lab 11 ",
+        "type": "laboratory",
+        "summary": "Trivia",
+        "date": "2025-28-09",
+        "tech": ["Javascript", "HTML", "React"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "title": "Lab 12 ",
+        "type": "laboratory",
+        "summary": "Expo Vue.js",
+        "date": "2025-28-09",
+        "tech": ["Vue.js"],
+        "repo": "",
+        "demo": ""
+      },
+      {
+        "title": "Lab 13 ",
+        "type": "laboratory",
+        "summary": "Chatbot with AI",
+        "date": "2025-28-09",
+        "tech": ["Vue.js"],
+        "repo": "https://github.com/HillaryMalespin/Proyecto_Dise-o_Web.git",
+        "demo": ""
       }
     ]
   },
